@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/*encabezado*/
+
+.encabezado{
+    width: 100%;
+    height: 300%;
+    background: url('./rosaa.avif') no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+   
+}
+#imlogo{
+    height: 170px;
+    width: 170px;
+    filter: drop-shadow(15px 20px 8px rgb(14, 14, 20));
+    
+}
+#tilogo{
+    margin-right: 700px;
+    font-family: "Story Script", sans-serif;
+    font-size: 40px;
+    color: black;
+    text-shadow: 8px 8px 15px rgba(167, 163, 163, 0.959);
+   
+}
+.indi{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: -300px;
+}
+
+.indi li{
+    list-style: none;
+    font-size: 40px;
+    font-family: "Story Script", sans-serif;
+    background: rgb(241, 205, 223);
+    border-radius: 15px;
+    padding: 0px 15px;
+    opacity: 0.5;
+    color: rgb(236, 148, 119);
+    
+}
+.indi li:hover{
+    opacity: 1;
+}
+
+.seccion{
+    background-color: rgb(253, 198, 219);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px; color: black; 
+}
+#portada{
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    gap: 50px;
+    background: rgb(255, 148, 175);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+footer img{
+    width: 70px;
+    margin-right: 30px;
+
+}
+footer p{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-top: 20px; 
+}
+#cate{
+    font-family: "Lobster", sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+.seccion p{
+    font-family: "Akaya Kanadaka", system-ui;
+    text-align: center;
+    font-size: 30px;
+}
+#lis{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    font-family: "Akaya Kanadaka", system-ui;
+    font-size: 30px;
+}
+#lis li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#lis img {
+    width: 80px;
+    transition: 0.3s;
+}
+#lis img:hover{
+    transform: scale(1.2);
+}
+/*Tarjetas*/
+.superior{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 10px 10px 10px #000;
+}
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3 {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #f8b0cc;
+    background: rgba(0, 0, 0,.4);
+    text-align: center;
+}
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(255, 151, 185);
+    padding: 15px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+    font-family: "Bitcount Prop Single", system-ui;
+}
+.card .back h3 {
+     font-size: 30px;
+     margin-top: 20px;
+     letter-spacing: 2px;
+}
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+.centrar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#Video{
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    transition: 0.7s;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    cursor: url('./img/Logo.png'),auto;
+}
+#Video:hover{
+    width: 450px;
+    height: 400px;
+    border-radius: 0;
+    padding-top: 25px;
+    cursor: url('./img/Logo.png'),auto;
+}
+.seccion{
+        background-color: antiquewhite;
+        margin: 20px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px; color: black;
+
+}
+.tarjeta{
+    background-color: rgb(255, 151, 194);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px; 
+    transition: 0.3s;
+}
+.tarjeta:hover{
+    background-color: deeppink;   
+}
+#pago{
+    width: 200px;
+}
+#pago2{
+    width: 120px;
+}
+.btn{
+     background-color: rgb(255, 100, 165);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+.btn:hover{
+    background-color: deeppink;
+    color: white;
+    cursor: pointer;
+}
+.article{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    transition: all .5s ease;
+    margin: 20px;
+}
+
+.article img:first-child{
+    box-shadow: 0 60px 60px -60px rgb(255, 75, 159);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.article img:last-child{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.article:hover{
+    transform:
+        perspective(250px) 
+        rotateX(20deg)
+        translateY(-5%)
+        translateZ(0);
+}
+.article::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image:
+        linear-gradient(
+            to bottom,
+            transparent 10%,
+            rgba(0,0,0,0.5)50%,
+            rgba(0,0,0,)90%,
+        );
+        opacity: 0;
+        transition: all 0.5s ease;
+}
+.article:hover::before{
+    opacity: 1;
+}
+article:hover img:last-child{
+    opacity: 1;
+    transform: translateY(20%);
+}
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.article p{
+    font-size: 11px;
+}
+.articulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.articulos p{
+    font-size: 20px;
+    margin-top: 8px;
+    text-align: center;
+}
+.precio{
+    height: 20px;
+    font-size: 14px;
+    margin-top: 6px;
+    text-align: center;
+}
+.fil{
+  display: flex;
+  gap: 20px; 
+}
+
+.camp label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.camp input{
+  width: 200px;
+}
+.conte{
+  display: flex;
+  flex-direction: column; /* esto los pone uno debajo del otro */
+}
+
+.formu{
+  margin-bottom: 30px;
+}
+
+.pag{
+   display: inline-block;
+   vertical-align: top;
+}
+.meto{
+  display: inline-block;
+  margin: 0 30px;
+ vertical-align: top;
+}
+.meto img{
+    width: 80px;
+    display: block;
+    margin: 5px auto;
+}
